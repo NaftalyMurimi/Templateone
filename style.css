@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*button for navigation on small screen*/
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+
+
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    margin: 0px 20px;
+}
+a{
+    color: rgb(73, 68, 68);
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+     width:90%;
+     max-width: 1100px;
+     margin: auto;
+}
+/* nav */
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px;
+    font-size: 13px;
+}
+.main-nav ul {
+    display: flex;
+}
+.main-nav ul li{
+    padding: 0 15px;
+}
+.main-nav ul li a:hover {
+    font-size: 20px;
+    background-color: rgb(228, 133, 10);
+}
+.main-nav ul.main-menu{
+    flex:1;
+    margin-left: 20px;
+}
+.logo{
+    width: 110px;
+}
+
+/* showcase styling*/
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: 10px 20px;
+    font-weight: bold;
+    background: gray;
+    border-radius: 4px;
+    color: #fff;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.showcase{
+   width: 100%;
+   height: 400px;
+   background: url('car20.jpg')
+   no-repeat center center/cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+.showcase h2, p{
+    margin-bottom: 10px;
+}
+/*home cards*/
+.home-cards img{
+    width: 100%;
+    height: 170px;
+    margin-bottom: 20px;
+}
+.home-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.home-cards h3{
+    margin-bottom: 5px;
+}
+.home-cards a{
+    display: inline-block;
+    padding-top: 10px;
+    color: rgb(13, 185, 238);
+}
+/* Xbox*/
+.xbox{
+    background: url('car17.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 350px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.xbox .content{
+    width: 400px;
+    margin: 50px 20px 20px 30px;
+}
+
+.carbon{
+    background: url('car21.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 350px;
+}
+.carbon .content{
+    width: 400px; 
+    padding: 100px 30px;
+}
+
+/*Follow*/
+.follow{
+    display: flex;
+    align-items: center;
+    margin: 30px 0px 30px;
+}
+.follow *{
+    margin-left: 10px;
+}
+
+
+/*Footer*/
+footer{
+    background-color: rgb(187, 182, 182);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-inner .logo{
+    margin-left: 60px;
+}
+
+/*media query for > 700px*/
+@media (max-width: 700px) {
+    /*display for the menu button to show when the screen is >700*/
+    .menu-btn{
+        display: block;
+    }
+    .menu-btn:hover{
+        opacity: 0.5;
+    }
+    /*show main nav when the button bars is clicked*/
+    .main-nav ul.main-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(238, 233, 233);
+        width: 50%;
+        height: 100%;
+        border-right: #fff 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+
+
+    }
+    .main-nav ul.main-menu.show{
+        transform: translateX(-20px);
+    }
+    .main-nav ul.main-menu li{
+        padding: 10px;
+        border-bottom: blue 1px solid;
+        font-size: 15px;
+    }
+
+
+    .home-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .xbox .content{
+        width: 300px;
+        margin: 80px 20px 20px 30px;
+    }
+    
+}
+
+
+/*media query for > 700px*/
+@media (max-width: 500px) {
+    .home-cards{
+        grid-template-columns: 1fr;
+    }
+    
+}

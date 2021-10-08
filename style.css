@@ -1,4 +1,5 @@
 *{
+    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff;
+    background-color: rgb(236, 219, 219);
     font-size: 15px;
     line-height: 1.5;
     color: black;
@@ -78,7 +79,7 @@ ul{
 .showcase{
    width: 100%;
    height: 400px;
-   background: url('car20.jpg')
+   background: url('image2.JPG')
    no-repeat center center/cover;
    display: flex;
    flex-direction: column;
@@ -123,7 +124,7 @@ ul{
 }
 
 .carbon{
-    background: url('car21.jpg') no-repeat center center/cover;
+    background: url('image7.JPG') no-repeat center center/cover;
     width: 100%;
     height: 350px;
 }
@@ -202,10 +203,14 @@ footer{
         grid-template-columns: repeat(2, 1fr);
     }
     .xbox .content{
-        width: 300px;
-        margin: 80px 20px 20px 30px;
+        width: 100%;
+        margin: 50px 20px 20px 10px;
+        font-size: 15px;
     }
-    
+    .carbon .content{
+        width: 100%;
+        margin: 40px 20px 20px 10px;
+    }
 }
 
 

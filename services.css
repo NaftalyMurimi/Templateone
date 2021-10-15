@@ -35,9 +35,10 @@
 
 /*creating media query*/
 .card-info{
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: grid;
+    height: max-content;
     grid-template-columns: 1fr;
     background-color: rgb(245, 241, 237);
     
@@ -47,4 +48,12 @@
 .info-services{
     margin-bottom: 10px 5px 20px 5px;
     text-align: center;
+}
+li{
+    font-size: 15px;
+    margin-left:3px;
+
+}
+ul{
+    margin: 15px;
 }

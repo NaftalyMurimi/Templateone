@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.horizontal{
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+}
+.cont{
+    
+    display: block;
+    white-space: nowrap;
+}
+.con{
+    display: inline-block;
+    margin-right: 10px;
+}
+.con img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}

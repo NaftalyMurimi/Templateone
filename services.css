@@ -32,3 +32,16 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
+/*creating media query*/
+.card-info{
+    width: 80%;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(245, 241, 237);
+    
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px 5px slategrey;
+}

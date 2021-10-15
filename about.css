@@ -1,14 +1,18 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(236, 219, 219);
 }
 .holder{
     margin-top: 20px;
 }
 .card-info{
-    width: 60%;
+    width: 70%;
     margin: auto;
-    height: 200px;
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: rgb(245, 241, 237);
@@ -17,6 +21,19 @@
     justify-items: center;
     margin-bottom: 20px;
     box-shadow: 5px 5px 5px 5px slategrey;
+}
+.info-services h3{
+    text-align: center;
+    font-size: 30px;
+    color: brown;
+}
+.info-services p{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+   
+    
 }
 .card-info h3{
     text-align: center;
@@ -46,4 +63,23 @@
 .about{
     border: 2px solid rgb(156, 156, 80);
     text-align: center;
+}
+
+
+
+/*creating media query*/
+@media (max-width: 500px) {
+    .card-info{
+        width: 80%;
+        margin: auto;
+        
+        display: grid;
+        grid-template-columns:1fr;
+        background-color: rgb(245, 241, 237);
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 20px;
+        box-shadow: 5px 5px 5px 5px slategrey;
+    }
 }

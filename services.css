@@ -2,13 +2,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .holder{
     width: 100%;
     height: 350px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(240, 217, 188);
+    background-color: rgb(236, 219, 219);
     align-items: center;
     justify-content: center;
     justify-items: center;

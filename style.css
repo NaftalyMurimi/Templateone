@@ -18,14 +18,14 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(236, 219, 219);
+    background-color: rgb(8, 8, 8);
     font-size: 15px;
     line-height: 1.5;
-    color: black;
+    color: white;
     margin: 0px 20px;
 }
 a{
-    color: rgb(73, 68, 68);
+    color: #fff;
     text-decoration: none;
 }
 ul{
@@ -38,39 +38,53 @@ ul{
 }
 /* nav */
 .main-nav{
-    display: flex;
+   /* display: flex;*/
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: 50px;
     padding: 20px;
-    font-size: 13px;
+    font-size: 20px;
+    font-family: 'papyrus';
     
+}
+.main-menu{
+    
+    width: 70%;
+    align-items: center;
+    justify-content:center;
 }
 .main-nav ul {
     display: flex;
 }
 .main-nav ul li{
     padding: 0 15px;
+    
 }
 .main-nav ul li a:hover {
     
-    color: rgb(228, 133, 10);
+    color: rgb(250, 144, 6);
 }
 .main-nav ul.main-menu{
     flex:1;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .logo{
     width: 80px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 /*style for the drop down list menu*/
 .main-nav ul ul{
     display: none;
 }
 .main-nav ul li:hover>ul {
+    position: absolute;
+    margin-left: -20px;
+    
     display: block;
+}
+.main-nav ul li:hover>ul a {
+    color: #fff;
 }
 
 /* showcase styling*/
@@ -89,7 +103,7 @@ ul{
 }
 .showcase{
    width: 100%;
-   height: 400px;
+   height: 600px;
    background: url('./images/lwe.png')
    no-repeat center center/cover;
    display: flex;
@@ -102,33 +116,43 @@ ul{
 .showcase h2, p{
     margin-bottom: 10px;
 }
-/*home cards*/
-.home-cards img{
-    width: 100%;
-    height: 170px;
-    margin-bottom: 20px;
+/*MY style*/
+
+.style h1, h2{
+    text-align: center;
+    margin-bottom: 10px;
 }
-.home-cards{
-    width: 70%;
+.my-style{
+    width: 80%;
+    
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    
 }
-.home-cards h3{
-    margin-bottom: 5px;
+.my-style img{
+    width: 450px;
+    height: 600px;
 }
-.home-cards a{
-    display: inline-block;
-    padding-top: 10px;
-    color: rgb(13, 185, 238);
+.my-style video{
+    width: 600px;
+    height: 500px;
 }
+.my-style p{
+    margin: auto;
+    
+   font-size: large;
+    width: 90%;
+    
+}
+
 .facebook{
     width: 100%;
     height: 50px;
     background-color: rgb(12, 12, 161);
     color: #fff;
-    
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,6 +176,7 @@ ul{
 .carbon{
     background: url('./images/image7.JPG') no-repeat center center/cover;
     width: 100%;
+    margin-top: 20px;
     height: 350px;
 }
 .carbon .content{
@@ -205,7 +230,7 @@ footer{
         top: 0;
         left: 0;
         background: rgb(238, 233, 233);
-        width: 50%;
+        width: 80%;
         height: 100%;
         border-right: #fff 1px solid;
         opacity: 0.9;
@@ -214,6 +239,42 @@ footer{
         transition: transform 0.5s ease-in-out;
 
 
+    }
+    /*style for the drop down list menu*/
+    .main-nav ul ul{
+    display: none;
+    }
+    .main-nav ul li:hover>ul {
+    position: absolute;
+    width: 90%;
+    margin-left: -20px;
+    background-color:rgb(236, 219, 219);
+    
+    display: block;
+    }
+    .main-nav ul li:hover>ul a{color: black;}
+    /*MY style*/
+
+
+    .my-style{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:1fr;
+
+    }
+    .my-style img{
+    width: 100%;
+    height: 500px;
+    }
+    .my-style video{
+        width: 100%;
+        height: 500px;
+    }
+    .my-style p{
+    
+        margin-top: 30px;
+        line-height: 25px;
     }
     .main-nav ul.main-menu.show{
         transform: translateX(-20px);

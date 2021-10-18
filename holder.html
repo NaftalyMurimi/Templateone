@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    ..................
+    
+    .container{
+        background-color: black;
+        text-align: center;
+        position: sticky;
+        top:0;
+    }
+    .container .main-nav ul li{
+        display: inline-block;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        padding: 20px;
+        text-transform: uppercase;
+        margin: 0 15px;
+        display: inline-block;
+    }
+    ul{
+        list-style: none;
+    }
+    
+    ....................
+    .container{
+     width:90%;
+     max-width: 1100px;
+     margin: auto;
+}
+/* nav */
+.main-nav{
+   /* display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'papyrus';
+    
+}
+.main-menu{
+    
+    width: 70%;
+    align-items: center;
+    justify-content:center;
+}
+.main-nav ul {
+    display: flex;
+}
+.main-nav ul li{
+    padding: 0 15px;
+    
+}
+.main-nav ul li a:hover {
+    
+    color: rgb(250, 144, 6);
+}
+.main-nav ul.main-menu{
+    flex:1;
+    margin-left: 30px;
+}
+.logo{
+    width: 80px;
+    height: 100px;
+    margin-top: 10px;
+}
+/*style for the drop down list menu*/
+.main-nav ul ul{
+    display: none;
+}
+.main-nav ul li:hover>ul {
+    position: absolute;
+    margin-left: -20px;
+    
+    display: block;
+}
+.main-nav ul li:hover>ul a {
+    color: #fff;
+}
+        .home-cards img{
+            width: 100%;
+            height: 170px;
+            margin-bottom: 20px;
+        }
+        .home-cards{
+            width: 70%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .home-cards h3{
+            margin-bottom: 5px;
+        }
+        .home-cards a{
+            display: inline-block;
+            padding-top: 10px;
+            color: rgb(13, 185, 238);
+        }
+    </style>
+</head>
+<body><!--home cards-->
+    <section class="home-cards">
+        <div>
+            <img src="./images/image3.PNG" alt="">
+            <h3>New surface Pro 7 News</h3>
+            <P>Nation. Empower Africa.
+                Choose your favourite newsletters and we will handpick stories that you would love to read.</P>
+            <a href="#">learn More</a>
+        </div>
+        <div>
+            <img src="./images/image4.jpg" alt="">
+            <h3>New surface Pro 7 News</h3>
+            <P>Nation. Empower Africa.
+                Choose your favourite newsletters and we will handpick stories that you would love to read.</P>
+            <a href="#">learn More</a>
+        </div>
+        <div>
+            <img src="./images/image5.jpg" alt=""> 
+            <h3>New surface Pro 7 News</h3>
+            <P>Lorem ipsum dolor, sit amet consectetur
+                 adipisicing elit. Ullam autem aut incidunt distinctio quam 
+                 impedit eius. Nihil nam repudiandae officiis! Placeat impedit
+                  temporibus repellat consequatur aliquid ipsa! Tempore, provident veritatis!</P>
+            <a href="#">learn More</a>
+        </div>
+       <div>
+            <img src="./images/image6.PNG" alt="">
+            <h3>New surface Pro 7 News</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi
+                 reiciendis repellendus qui aspernatur quas at eos ex ipsum accusamus delectus, 
+                atque quos in cumque repudiandae! Exercitationem et nihil esse!</P>
+            <a href="#">learn More</a>
+            </div>
+    </section>
+    <!--home cards-->
+    <section class="home-cards">
+        <div>
+            <img src="./images/car26.jpg" alt="">
+            <h3>New surface Pro 7 News</h3>
+            <P>Nation. Empower Africa.
+                Choose your favourite newsletters and we will handpick stories that you would love to read.</P>
+            <a href="#">learn More</a>
+        </div>
+        <div>
+            <img src="./images/car23.jpg" alt="">
+            <h3>New surface Pro 7 News</h3>
+            <P>Nation. Empower Africa.
+                Choose your favourite newsletters and we will handpick stories that you would love to read.</P>
+            <a href="#">learn More</a>
+        </div>
+        <div>
+            <img src="./images/car22.jpg" alt=""> 
+            <h3>New surface Pro 7 News</h3>
+            <P>Lorem ipsum dolor, sit amet consectetur
+                 adipisicing elit. Ullam autem aut incidunt distinctio quam 
+                 impedit eius. Nihil nam repudiandae officiis! Placeat impedit
+                  temporibus repellat consequatur aliquid ipsa! Tempore, provident veritatis!</P>
+            <a href="#">learn More</a>
+        </div>
+       <div>
+            <img src="./images/image10.jpg" alt="">
+            <h3>New surface Pro 7 News</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi
+                 reiciendis repellendus qui aspernatur quas at eos ex ipsum accusamus delectus, 
+                atque quos in cumque repudiandae! Exercitationem et nihil esse!</P>
+            <a href="#">learn More</a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    width: 100%;
+    
+    background-color: #fff;
+}
+
+.couples{
+    width: 100%;
+   
+    
+    
+}
+.couple{
+    width: 100%;
+    margin: auto ;
+    margin-bottom: 20px;
+    
+}
+.introduction{
+    width: 80%;
+    height: 200px;
+    background-color: rgb(227, 233, 232);
+    margin: 50px auto;
+
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; 
+   border-radius: 6px;
+   
+
+}
+
+.introduction p{
+    width: 90%;
+    font-size: large;
+    color: rgb(11, 118, 218);
+   
+    
+}
+.images{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+        'img-1 img-2 img-3 img-4'
+        'img-1 img-5 img-5 img-6'
+        'img-7 img-7 img-8 img-6'
+        'img-9 img-10 img-11 img-11';
+}
+.images a {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-1{
+    grid-area: img-1;
+    min-height: 810px;
+    background-image: url("./images/couple.jpg");
+}
+.img-2{
+    grid-area: img-2;
+    background-image: url('./images/_DSC0030.jpg');
+}.img-3{
+    grid-area: img-3;
+    background-image: url("./images/_DSC0862.jpg");
+}.img-4{
+    grid-area: img-4;
+    background-image: url('./images/_DSC0040.jpg');
+}.img-5{
+    grid-area: img-5;
+    background-image: url("./images/_DSC0032.jpg");
+}.img-6{
+    grid-area: img-6;
+    min-height: 810px;
+    background-image: url("./images/couple1.jpg");
+}
+.img-7{
+    grid-area: img-7;
+    background-image: url("./images/car25.jpg");
+}
+.img-8{
+    grid-area: img-8;
+    background-image: url("./images/_DSC0008.jpg");
+}
+.img-9{
+    grid-area: img-9;
+    background-image: url("./images/car20.jpg");
+}
+.img-10{
+    grid-area: img-10;
+    background-image: url("./images/_DSC0441-1.jpg");
+}.img-11{
+    grid-area: img-11;
+    background-image: url("./images/couple2.JPG");
+}
+
+
+@media  (max-width:900px) {
+  
+   .images{ 
+    grid-template-areas: 
+        'img-1 img-1 img-11 img-11'
+        'img-1 img-1 img-2 img-2'
+        'img-3 img-3 img-3 img-3'
+        'img-4 img-4 img-5 img-5'
+        'img-6 img-6 img-6 img-6'
+        'img-7 img-7 img-7 img-7'
+        'img-8 img-8 img-8 img-8'
+        'img-10 img-10 img-9 img-9'
+        
+
+        ;
+   }
+}
+@media  (max-width:500px) {
+
+    .images a {
+        height: 300px;
+        margin-bottom: 5px;
+    }
+    .img-1{
+        min-height: 400px;
+    }
+    .img-6{
+        min-height: 400px;
+    }
+    .images{ 
+        grid-gap: 0px;
+     grid-template-areas: 
+         'img-1 img-1 img-1 img-1'
+         'img-2 img-2 img-2 img-2'
+         'img-3 img-3 img-3 img-3'
+         'img-4 img-4 img-4 img-4'
+         'img-4 img-4 img-4 img-4'
+         'img-6 img-6 img-6 img-6'
+         'img-7 img-7 img-7 img-7'
+         'img-8 img-8 img-8 img-8'
+         'img-9 img-9 img-9 img-9'
+         'img-10 img-10 img-10 img-10'
+         'img-11 img-11 img-11 img-11';
+    }
+ }

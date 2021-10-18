@@ -12,15 +12,17 @@ body{
 }
 
 .couples{
-    width: 100%;
-   
+    
+   height: auto;
     
     
 }
 .couple{
     width: 100%;
-    margin: auto ;
+    
     margin-bottom: 20px;
+    height: auto;
+
     
 }
 .introduction{
@@ -48,6 +50,7 @@ body{
 .images{
     width: 90%;
     margin: auto;
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -56,7 +59,7 @@ body{
         'img-1 img-2 img-3 img-4'
         'img-1 img-5 img-5 img-6'
         'img-7 img-7 img-8 img-6'
-        'img-9 img-10 img-11 img-11';
+        ;
 }
 .images a {
     width: 100%;
@@ -93,22 +96,11 @@ body{
 }
 .img-7{
     grid-area: img-7;
-    background-image: url("./images/car25.jpg");
+    background-image: url("./images/couple2.JPG");
 }
 .img-8{
     grid-area: img-8;
     background-image: url("./images/_DSC0008.jpg");
-}
-.img-9{
-    grid-area: img-9;
-    background-image: url("./images/car20.jpg");
-}
-.img-10{
-    grid-area: img-10;
-    background-image: url("./images/_DSC0441-1.jpg");
-}.img-11{
-    grid-area: img-11;
-    background-image: url("./images/couple2.JPG");
 }
 
 
@@ -136,12 +128,14 @@ body{
         margin-bottom: 5px;
     }
     .img-1{
-        min-height: 400px;
+        min-height: 300px;
     }
     .img-6{
-        min-height: 400px;
+        min-height: 300px;
     }
     .images{ 
+        display: flex;
+        flex-direction: column;
         grid-gap: 0px;
      grid-template-areas: 
          'img-1 img-1 img-1 img-1'
@@ -152,8 +146,6 @@ body{
          'img-6 img-6 img-6 img-6'
          'img-7 img-7 img-7 img-7'
          'img-8 img-8 img-8 img-8'
-         'img-9 img-9 img-9 img-9'
-         'img-10 img-10 img-10 img-10'
-         'img-11 img-11 img-11 img-11';
+         ;
     }
  }

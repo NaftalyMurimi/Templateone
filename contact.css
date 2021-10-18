@@ -4,11 +4,12 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body{
     background: url("./images/image7.JPG") no-repeat center center/cover;
     width: 100%;
     text-align: center;
-    background-color:rgb(236, 219, 219);
+    background-color:#fff;
     
 }
 .info{
@@ -38,9 +39,12 @@ p{
     margin-bottom: 20px;
 
 }
+i{
+    color: #fff;
+}
 .card{
     min-height: 300px;
-    background-color: burlywood;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;

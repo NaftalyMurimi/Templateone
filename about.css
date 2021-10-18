@@ -1,99 +1,50 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    background-color: rgb(236, 219, 219);
-}
-.holder{
-    margin-top: 20px;
-}
+
 .card-info{
-    width: 70%;
-    margin: auto;
-    
+    width: 100%;
+    height: auto;
+    background-color: black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(245, 241, 237);
-    align-items: center;
+    color:#fff;
+}
+img{
+    width: 100%;
+    height: 700px;
+}
+.info-services{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
     justify-content: center;
     justify-items: center;
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 5px 5px slategrey;
-}
-.info-services h3{
-    text-align: center;
-    font-size: 30px;
-    color: brown;
-}
-.info-services p{
-    text-align: center;
-    margin: 10px;
-    font-size: 20px;
-    margin-bottom: 20px;    
-}
-.card-info h3{
-    text-align: center;
-    margin-bottom: 20px;
-}
-/*home cards*/
-.home-cards img{
-    width: 100%;
-    height: 170px;
-    margin-bottom: 20px;
-}
-.home-cards{
     width: 80%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+   
 }
-.home-cards h3{
-    margin-bottom: 5px;
+.info-services h3{
+    margin-bottom: 30px;
+    
 }
-.home-cards a{
-    display: inline-block;
-    padding-top: 10px;
-    color: rgb(13, 185, 238);
-}
-.about{
-    border: 2px solid rgb(156, 156, 80);
-    text-align: center;
-}
-
-
-
-/*creating media query*/
-@media (max-width: 500px) {
-    .card-info{
-        width: 90%;
-        margin: auto;
+@media  (max-width:700px) {
+    .info-services h3{
+        margin-top: 20px;
         
-        display: grid;
-        grid-template-columns:1fr;
-        background-color: rgb(245, 241, 237);
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        margin-bottom: 20px;
-        box-shadow: 5px 5px 5px 5px slategrey;
     }
-    .card-info img{
-        width: 90%;
-        margin: auto;
-
+    .info-services{
+        font-size: 17px;
     }
-    .info-services p{
-        margin: auto;
-
-    }
-    .home-cards{
-        width: 80%;
-        margin: auto;
-        display: grid;
+    .card-info{
         grid-template-columns: 1fr;
-        grid-gap: 20px;
+    }
+    img{
+        width: 100%;
+        height: 400px;
     }
 }

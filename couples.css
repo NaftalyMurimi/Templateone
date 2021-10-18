@@ -122,7 +122,16 @@ body{
    }
 }
 @media  (max-width:500px) {
-
+    .introduction{
+        width: 100%;
+        height: auto; 
+        margin: 0px;     
+    
+    }
+    p{
+        margin: 5px;
+    }
+    
     .images a {
         height: 500px;
         margin-bottom: 5px;

@@ -10,7 +10,11 @@ body{
     
     background-color: #fff;
 }
-
+.good{
+    background: url("./images/couple2.JPG") no-repeat center center/cover;
+    width: 100%;
+    height: 500px;
+}
 .couples{
     
    height: auto;
@@ -127,6 +131,9 @@ body{
         height: auto; 
         margin: 0px;     
     
+    }
+    .good{
+        height: 300px;
     }
     p{
         margin: 5px;

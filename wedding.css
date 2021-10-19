@@ -33,7 +33,7 @@ color: white;}
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: rgb(245, 241, 237);
+    
     align-items: center;
     justify-content: center;
     justify-items: center;

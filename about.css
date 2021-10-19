@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+body{
+    background-color: black;
+color: white;
+}
 .card-info{
     width: 100%;
     height: auto;

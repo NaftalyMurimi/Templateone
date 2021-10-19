@@ -82,7 +82,7 @@ color: white;}
         grid-gap: 0px;
     }
     .wed-info .info{
-        
+        box-shadow: 5px 5px 5px 5px slategrey;
         margin-bottom: 20px;
     }
     .wed-info .info img{

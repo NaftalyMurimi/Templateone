@@ -11,7 +11,7 @@ body{
 color: white;
 }
 .good{
-    background: url("./images/couple2.JPG") no-repeat center center/cover;
+    background: url("./images/couple10.JPG") no-repeat center center/cover;
     width: 100%;
     height: 500px;
 }
@@ -85,16 +85,16 @@ color: white;
 }
 .img-2{
     grid-area: img-2;
-    background-image: url('./images/_DSC0030.jpg');
+    background-image: url('./images/couple1.jpg');
 }.img-3{
     grid-area: img-3;
-    background-image: url("./images/_DSC0862.jpg");
+    background-image: url("./images/couple2.JPG");
 }.img-4{
     grid-area: img-4;
-    background-image: url('./images/_DSC0040.jpg');
+    background-image: url('./images/couple12.jpg');
 }.img-5{
     grid-area: img-5;
-    background-image: url("./images/_DSC0032.jpg");
+    background-image: url("./images/couple10.jpg");
 }.img-6{
     grid-area: img-6;
     min-height: 810px;
@@ -102,11 +102,11 @@ color: white;
 }
 .img-7{
     grid-area: img-7;
-    background-image: url("./images/couple2.JPG");
+    background-image: url("./images/couple11.jpg");
 }
 .img-8{
     grid-area: img-8;
-    background-image: url("./images/_DSC0008.jpg");
+    background-image: url("./images/couple.jpg");
 }
 
 

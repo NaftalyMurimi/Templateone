@@ -43,7 +43,9 @@ body{
    
 
 }
-
+.introduction h2{
+    margin-top: 20px;
+}
 .introduction p{
     width: 90%;
     font-size: large;

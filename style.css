@@ -36,6 +36,9 @@ ul{
      background-color: black;
      text-transform: uppercase;
      /* max-width: 1100px; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
      margin: auto;
      margin-bottom: 15px;
      position: sticky;
@@ -44,6 +47,9 @@ ul{
 /* nav */
 .main-nav{
    /* display: flex;*/
+   display: flex;
+   align-items: center;
+   justify-content: center;
     align-items: center;
     justify-content: space-between;
     height: 50px;

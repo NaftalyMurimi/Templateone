@@ -38,6 +38,8 @@ ul{
      /* max-width: 1100px; */
      margin: auto;
      margin-bottom: 15px;
+     position: sticky;
+     top: 0px;
 }
 /* nav */
 .main-nav{
@@ -189,22 +191,12 @@ ul{
     padding: 100px 30px;
 }
 
-/*Follow*/
-.follow{
-    display: flex;
-    align-items: center;
-    margin: 30px 0px 30px;
-}
-.follow *{
-    margin-left: 10px;
-}
-
 
 /*Footer*/
 footer{
-    background-color: rgb(187, 182, 182);
+    background-color: black;
     width: 100%;
-    height: 150px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,6 +220,10 @@ footer{
     .menu-btn:hover{
         opacity: 0.5;
     }
+    .container{
+        position: absolute;
+        top: 0px;
+    }
     /*show main nav when the button bars is clicked*/
     .main-nav ul.main-menu{
         top: -100%;
@@ -236,7 +232,7 @@ footer{
         top: 0;
         left: 0;
         background: rgb(238, 233, 233);
-        width: 80%;
+        width: 100%;
         height: 100%;
         
         border-right: #fff 1px solid;
@@ -245,6 +241,9 @@ footer{
         transform: translateX(-500px);
         transition: transform 0.5s ease-in-out;
 
+    }
+    .main-menu li{
+        background-color: rgb(238, 233, 233);
     }
     /*style for the drop down list menu*/
     
